@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* REUSED */
+html {
+  font-family: "Mulish", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 87px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 1440px) {
+  h1 {
+    font-size: 66px;
+    line-height: 84px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 61px;
+    line-height: 80px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 57px;
+    line-height: 64px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 54px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  h1 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+.container {
+  width: 1572px;
+  margin: 0 auto;
+}
+
+.btn-1 {
+  border-radius: 100px;
+  padding: 16px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+@media only screen and (max-width: 1280px) {
+  .btn-1 {
+    padding: 10px 16px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .btn-1 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .btn-1 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn-1 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn-1 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .btn-1 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+.btn-2 {
+  border-radius: 100px;
+  padding: 16px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: none;
+  background: #E4BB26;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1280px) {
+  .btn-2 {
+    padding: 10px 16px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .btn-2 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .btn-2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn-2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn-2 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .btn-2 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn-2 {
+    width: 160px;
+  }
+}
+
+.chevron-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  background: black;
+  color: #fff;
+  background-image: url("../../assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1440px) {
+  .hero {
+    background-position: -156px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero {
+    background-position: -234px;
+  }
+}
+
+.header {
+  padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+@media only screen and (max-width: 1280px) {
+  .header {
+    padding-top: 26px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.header .header__logo {
+  margin-right: 79px;
+}
+.header .header__btn-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .header .header__btn-1 {
+    display: none;
+  }
+}
+.header .hero__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .header .hero__navbar {
+    display: none;
+  }
+}
+.header .navbar__list {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 1440px) {
+  .header .navbar__list {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .header .navbar__list {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .navbar__list {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .navbar__list {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .header .navbar__list {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+.header .navbar__list a {
+  color: #fff;
+}
+.header .navbar__list .chevron-icon ion-icon {
+  font-size: 13px;
+  color: #fff;
+}
+.header .navbar__list .header__chevron-icon {
+  padding-top: 4px;
+  padding-left: 2px;
+}
+.header .navbar__list .navbar__item {
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .navbar__list .navbar__item:last-child {
+  margin-right: 71px;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.mobile-menu__item {
+  width: 36px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 8px;
+}
+.mobile-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.hero__inner {
+  padding-top: 180px;
+  padding-bottom: 316px;
+}
+@media only screen and (max-width: 1440px) {
+  .hero__inner {
+    padding-bottom: 216px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .hero__inner {
+    padding-top: 140px;
+    padding-bottom: 146px;
+  }
+}
+
+.hero__title--main {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+  .hero__title--main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+.subtitle--main {
+  width: 801px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 62px;
+}
+@media only screen and (max-width: 992px) {
+  .subtitle--main {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+.arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+.arrow-right ion-icon {
+  color: #fff;
+}
+
+.hero__btn-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+  .hero__btn-wrapper {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media only screen and (max-width: 1720px) {
+  .container {
+    width: 1408px;
+  }
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 47px;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .container {
+    width: 1260px;
+  }
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 1178px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 1047px;
+  }
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 23px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .container {
+    width: 916px;
+  }
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 13px;
+  }
+  .header .header__logo {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: auto;
+    margin: 0 60px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 20px;
+  }
+}

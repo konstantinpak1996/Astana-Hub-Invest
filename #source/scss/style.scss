@@ -1,0 +1,454 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {text-decoration: none;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+$mulish-reg: 'Mulish', sans-serif;
+
+// font-weight
+$fw-700: 700;
+$fw-800: 800;
+
+// font-size
+$fs-11: 11px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-38: 38px;
+$fs-42: 42px;
+$fs-44: 44px;
+$fs-46: 46px;
+$fs-48: 48px;
+$fs-54: 54px;
+$fs-57: 57px;
+$fs-61: 61px;
+$fs-63: 63px;
+$fs-66: 66px;
+$fs-70: 70px;
+
+// line-height
+$lh-13: 13px;
+$lh-16: 16px;
+$lh-18: 18px;
+$lh-20: 20px;
+$lh-46: 46px;
+$lh-52: 52px;
+$lh-56: 56px;
+$lh-60: 60px;
+$lh-64: 64px;
+$lh-76: 76px;
+$lh-80: 80px;
+$lh-84: 84px;
+$lh-87: 87px;
+
+
+// Colors
+$white: #fff;
+$gold: #E4BB26;
+
+// Mixins
+@mixin btn {
+  border-radius: 100px;
+  padding: 16px 20px;
+  @media only screen and (max-width: 1280px) {
+    padding: 10px 16px;
+  }
+}
+
+@mixin txt_16_20 {
+  font: {
+    family: $mulish-reg;
+    size: $fs-16;
+  }
+  line-height: $lh-20;
+
+  @media only screen and (max-width: 1440px) {
+    font: {
+      size: $fs-13;
+    }
+    line-height: $lh-18;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    font: {
+      size: $fs-12;
+    }
+    line-height: $lh-16;
+  }
+
+  @media only screen and (max-width: 992px) {
+    font: {
+      size: $fs-14;
+    }
+    line-height: $lh-18;
+  }
+
+  @media only screen and (max-width: 992px) {
+    font: {
+      size: $fs-13;
+    }
+    line-height: $lh-16;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font: {
+      size: $fs-11;
+    }
+    line-height: $lh-13;
+  }
+}
+
+@mixin txt_70_87 {
+  font: {
+    size: $fs-70;
+  }
+  line-height: $lh-87;
+
+  @media only screen and (max-width: 1440px) {
+    font: {
+      size: $fs-66;
+    }
+    line-height: $lh-84;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    font: {
+      size: $fs-61;
+    }
+    line-height: $lh-80;
+  }
+
+  @media only screen and (max-width: 992px) {
+    font: {
+      size: $fs-57;
+    }
+    line-height: $lh-64;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font: {
+      size: $fs-54;
+    }
+    line-height: $lh-60;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font: {
+      size: $fs-44;
+    }
+    line-height: $lh-52;
+  }
+
+  @media only screen and (max-width: 360px) {
+    font: {
+      size: $fs-38;
+    }
+    line-height: $lh-46;
+  }
+}
+
+// Mixin-center
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* REUSED */
+html {
+  font-family: $mulish-reg;
+}
+
+h1 { @include txt_70_87(); font-weight: $fw-800; }
+
+
+.container {
+  width: 1572px;
+  margin: 0 auto;
+}
+
+.btn-1 {
+  @include btn;
+  @include center;
+  @include txt_16_20();
+  color: $white;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid $white;
+}
+
+.btn-2 {
+  @include btn();
+  @include center();
+  @include txt_16_20();
+
+  @media only screen and (max-width: 992px) {
+    width: 160px;
+  }
+
+  width: max-content;
+  border: none;
+  background: $gold;
+  border-radius: 100px;
+  color: $white;
+  cursor: pointer;
+}
+
+.chevron-icon {
+  @include center();
+}
+
+.hero {
+  background: black;
+  color: $white;
+  background-image: url('../../assets/images/hero-bg.png');
+  @media only screen and (max-width: 1440px) {
+    background-position: -156px;
+  }
+  @media only screen and (max-width: 992px) {
+    background-position: -234px;
+  }
+  background-repeat: no-repeat;
+}
+
+.header {
+  @media only screen and (max-width: 1280px) {
+    padding-top: 26px;
+  }
+  @media only screen and (max-width: 992px) {
+    justify-content: space-between;
+  }
+
+  padding-top: 36px;
+  display: flex;
+  color: $white;
+
+
+  .header__logo {
+    margin-right: 79px;
+  }
+
+  .header__btn-1 {
+    @include center();
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .hero__navbar {
+    @include center;
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .navbar__list {
+    @include txt_16_20();
+    a {color: $white}
+    display: flex;
+    .chevron-icon ion-icon {
+      font-size: 13px;
+      color: $white;
+    }
+
+    .header__chevron-icon {
+      padding-top: 4px;
+      padding-left: 2px;
+    }
+
+    .navbar__item {
+      margin-right: 40px;
+      display: flex;
+    }
+    .navbar__item:last-child {
+      margin-right: 71px;
+    }
+  }
+}
+
+.mobile-menu {
+  @include center();
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+  }
+  display: none;
+
+  &__item {
+    width: 36px;
+    height: 2px;
+    background: $white;
+    margin-bottom: 8px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.hero__inner {
+  padding-top: 180px;
+  padding-bottom: 316px;
+  @media only screen and (max-width: 1440px) {
+    padding-bottom: 216px;
+  }
+  @media only screen and (max-width: 1280px) {
+    padding-top: 140px;
+    padding-bottom: 146px;
+  }
+
+
+}
+
+.hero__title--main {
+  @media only screen and (max-width: 992px) {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle--main {
+  @media only screen and (max-width: 992px) {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  width: 801px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.arrow-right {
+  @include center();
+  padding-top: 3px;
+  padding-left: 4px;
+  ion-icon {
+    color: $white;
+  }
+}
+
+.hero__btn-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__btn-wrapper {
+  @media only screen and (max-width: 992px) {
+    justify-content: left;
+  }
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 1720px) {
+  .container {
+    width: 1408px;
+  }
+
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 47px;
+  }
+}
+
+@media only screen and (max-width: 1540px) {
+  .container {
+    width: 1260px;
+  }
+
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 1178px;
+  }
+  
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 1047px;
+  }
+
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 23px;
+  }
+
+}
+
+@media only screen and (max-width: 1120px) {
+  .container {
+    width: 916px;
+  }
+
+  .header .navbar__list .navbar__item:last-child {
+    margin-right: 13px;
+  }
+
+  .header .header__logo {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: auto;
+    margin: 0 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
